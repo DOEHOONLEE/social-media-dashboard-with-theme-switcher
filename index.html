@@ -24,32 +24,32 @@
     <header id="header">
       <div id="title">
         <p id="heading" class="font-md">Social Media Dashboard</p>
-        <span>Total Followers: 23,004</span>
+        <span id="total-followers" class="text-dark">Total Followers: 23,004</span>
       </div>
     </header>
 
     <div id="toggle-container">
-      <span id="dark-mode">Dark Mode</span>
+      <span id="dark-mode" class="text-dark">Dark Mode</span>
       <label class="switch">
         <input type="checkbox">
-        <span class="slider round"></span>
+        <span class="slider round dark-gradient"></span>
       </label>
     </div>
 
     <div id="follower-container">
-      <div class="card">
+      <div class="card facebook">
         <div>
           <span class="company-logo">
             <img src="./images/icon-facebook.svg" alt="facebook">
           </span>
-          <span class="company-name">@nathanf</span>
+          <span class="company-name text-dark">@nathanf</span>
         </div>
         <div class="followers">
           <span class="followers-total">
             1987
           </span>
           <div>
-            <span class="letter-space font-sm">FOLLOWERS</span>
+            <span class="letter-space font-sm activity text-dark">FOLLOWERS</span>
           </div>
         </div>
         <div>
@@ -60,19 +60,19 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card twitter">
         <div>
           <span class="company-logo">
             <img src="./images/icon-twitter.svg" alt="facebook">
           </span>
-          <span class="company-name">@nathanf</span>
+          <span class="company-name text-dark">@nathanf</span>
         </div>
         <div class="followers">
           <span class="followers-total">
             1044
           </span>
           <div>
-            <span class="letter-space font-sm">FOLLOWERS</span>
+            <span class="letter-space font-sm activity text-dark">FOLLOWERS</span>
           </div>
         </div>
         <div>
@@ -84,18 +84,19 @@
       </div>
 
       <div class="card">
+        <div id="instagram-wrapper" class="instagram"></div>
         <div>
           <span class="company-logo">
             <img src="./images/icon-instagram.svg" alt="facebook">
           </span>
-          <span class="company-name">@nathanf</span>
+          <span class="company-name text-dark">@nathanf</span>
         </div>
         <div class="followers">
           <span class="followers-total">
             11K
           </span>
           <div>
-            <span class="letter-space font-sm">FOLLOWERS</span>
+            <span class="letter-space font-sm activity text-dark">FOLLOWERS</span>
           </div>
         </div>
         <div>
@@ -106,19 +107,19 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card youtube">
         <div>
           <span class="company-logo">
             <img src="./images/icon-youtube.svg" alt="facebook">
           </span>
-          <span class="company-name">@nathanf</span>
+          <span class="company-name text-dark">@nathanf</span>
         </div>
         <div class="followers">
           <span class="followers-total">
             8239
           </span>
           <div>
-            <span class="letter-space font-sm">SUBSCRIBERS</span>
+            <span class="letter-space font-sm activity text-dark">SUBSCRIBERS</span>
           </div>
         </div>
         <div>
@@ -141,7 +142,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Page Views
             </div>
             <div class="overview-logo">
@@ -164,7 +165,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Likes
             </div>
             <div class="overview-logo">
@@ -187,7 +188,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Likes
             </div>
             <div class="overview-logo">
@@ -210,7 +211,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Profile Views
             </div>
             <div class="overview-logo">
@@ -237,7 +238,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Page Views
             </div>
             <div class="overview-logo">
@@ -260,7 +261,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Page Views
             </div>
             <div class="overview-logo">
@@ -283,7 +284,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Page Views
             </div>
             <div class="overview-logo">
@@ -306,7 +307,7 @@
         <div class="overview-card">
           
           <div class="overview-head">
-            <div class="overview-title">
+            <div class="overview-title text-dark">
               Page Views
             </div>
             <div class="overview-logo">
@@ -400,5 +401,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./src/script.js"></script>
 </body>
 </html>
