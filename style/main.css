@@ -22,14 +22,14 @@
     --font-red: hsl(356, 69%, 56%);
     --text-dark: hsl(228, 34%, 66%);
     --text-light: hsl(228, 34%, 66%);
-    
+    /* hsl(230,16,45) */
         /* [[ THEMES ]] */
     
     /* Dark */
     --dark-background: hsl(230, 17%, 14%);
     --dark-card-background: rgb(37,42,65);
     --dark-card-hover-color: hsl(228, 28%, 23%);
-    --dark-toggle: linear-gradient( to right, hsla(210, 78%, 56%, 0.8), hsla(146, 68%, 55%, 0.8) );
+    --dark-gradient: linear-gradient( to right, hsla(210, 78%, 56%, 0.8), hsla(146, 68%, 55%, 0.8) );
     
     /* Light */
     --light-background: hsl(230, 17%, 14%);
@@ -63,7 +63,26 @@
     /* Themes */
 .background-dark-card {background-color: var(--dark-card-background);}
 
+.dark-gradient {background: var(--dark-gradient);}
+
 .background-light-card {background-color: var(--light-card-background);}
+
+.facebook {border-top: 6px solid hsl(208, 92%, 53%);}
+
+.instagram {
+    height: 6px;
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+    top: -20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.twitter {border-top: 6px solid hsl(203, 89%, 53%);}
+
+.youtube {border-top: 6px solid hsl(348, 97%, 39%);}
 
 
 /* [[GENERALS]] */
@@ -71,6 +90,7 @@
 body {
     font-family: var(--font-family);
     background-color: var(--dark-background);
+    color: var(--font-white);
 }
 
         /* [[ HEAD ]] */
@@ -114,7 +134,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--dark-toggle);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -189,11 +208,12 @@ input:checked + .slider:before {
     color: hsl(228, 34%, 66%);
     color: var(--font-white);
     border-radius: 6px;
-    border-top: 6px solid hotpink;
-
     padding: 20px 20px;
-
     text-align: center;
+}
+
+.card:nth-child(3) {
+    height: 206px;
 }
 
 .company-name {
