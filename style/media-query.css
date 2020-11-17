@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px) {
+    
+    body {
+        padding: 20px 50px;
+        margin-bottom: 30px;
+    }
+    
+    .card {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
+    .overview-card {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .card {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .overview-card {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
